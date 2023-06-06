@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array methods</title>
+    <link rel="stylesheet" href="methods.css">
+</head>
+<body>
+    <div class="one">
+        <div id="hello">
+            <h1 id="welcome"></h1>
+            <h1 id="sort1"></h1>
+            <h1 id =remove></h1>
+            <h1 id="add"></h1>
+            <h1 id="find"></h1>
+            <h1 id="include"></h1>
+            <h1 id="filter"></h1>
+        </div>
+    </div>
+    <script>
+        let numbers = [8,4,9,2,6,1,7,5]
+        numbers.sort();
+        document.getElementById("sort1").innerText = numbers ;
+    </script>
+    <script>
+        let number = [8,4,9,2,6,1,7,5]
+        number.shift();
+        document.getElementById("remove").innerText ="this is shift method  " + number ;
+        console.log("this is shift method  " + number );
+    </script>
+    <script>
+            let number1 =[8,4,9,2,6,1,7,5]
+            number1.push(10);
+            document.getElementById("add").innerText = "this is push method  "+  number1 ;
+            console.log("this is push method  "+  number1 );
+    </script>
+
+<script>
+    let number2 =[8,4,9,2,6,1,7,5]
+    num1 = number2.indexOf(6);
+    document.getElementById("find").innerText ="this is index of" +""+ num1 ;
+    console.log("this is index of"+ num1)
+</script>
+<script>
+    let number3 = [8,4,9,2,6,1,7,5]
+   num2= number3.includes(7)
+    document.getElementById("include").innerText ="this is include  "+ num2;
+    console.log("this is include  "+ num2);
+</script>
+<script>
+    
+    
+  function evennumber(){
+    let number4 = [8,4,9,2,6,1,7,5]
+    for (let i of number4){
+        if(i%2===0){
+            console.log(i);
+        }
+    }
+    // for(let i=0; i<=number4.length;i+=2){
+    //     console.log("this are the even numbers  " +i);
+    // }
+  }
+  evennumber()
+</script>
+</body>
+</html>
